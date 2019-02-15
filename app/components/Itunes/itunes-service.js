@@ -13,14 +13,14 @@ function setState(prop, data) {
   _subscribers[prop].forEach(fn => fn())
 }
 
-//DO NOT MODIFY
-class ItunesService {
+//Public (don't modify)
+export default class ItunesService {
   get Songs() {
     return _state.songs
   }
 
   getMusicByArtist(artist) {
-    var url = 'https://itunes.apple.com/search?callback=?&term=' + artist;
+    let url = 'https://itunes.apple.com/search?callback=?&term=' + artist;
     // @ts-ignore
     $.getJSON(url)
       .then(res => {
@@ -34,7 +34,3 @@ class ItunesService {
     _subscribers[prop].push(fn)
   }
 }
-
-
-
-export default ItunesService

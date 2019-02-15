@@ -1,3 +1,25 @@
 body {
   margin: 0;
+  font-family: 'Source Code Pro', monospace;
+  background-image: url(/assets/img/music-bg.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.title {
+  text-shadow: 1px 1px solid black;
+}
+
+.song-input {
+  height: 50px;
+  width: 400px;
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+}
+
+audio {
+  width: 240px;
 }

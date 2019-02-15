@@ -6,24 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Music Is Fun!</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
+
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-    <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-        <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-        <div class="form-group">
-            <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-            <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+    <div class="container-fluid">
+
+        <div class="row mt-5">
+            <div class="col-2 d-flex justify-content-end">
+                <h1 class="text-white title mr-1"><i>listenUp</i></h1>
+            </div>
+            <div class="col-10 d-flex justify-content-center">
+                <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+                    <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+                    <div class="form-group">
+                        <input type="text" class="form-control shadow song-input" name="artist" placeholder=" Artist Name..." />
+                        <button type="submit" class="btn btn-lg btn-outline-light shadow ml-2" id="get-music-button">Get
+                            Music</button>
+                        <audio controls class="my-audio ml-5">
+                            <source src="${this.preview}" type="audio/ogg">
+                            <source src="${this.preview}" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </form>
+            </div>
         </div>
-    </form>
-    <div id="songs">
+
+
+        <div class="row mt-4" id="songs">
+            <div class="col-10 offset-1">
+                <!-- songs from song.js template -->
+            </div>
+        </div>
 
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="module" src="app/main.js"></script>
 </body>
