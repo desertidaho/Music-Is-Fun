@@ -1,6 +1,5 @@
 import ItunesController from "./components/Itunes/itunes-controller.js";
 
-
 class App {
   constructor() {
     this.controllers = {
