@@ -10,7 +10,7 @@ export default class Song {
 
     getTemplate() {
         return `
-        <div class="col-2">
+        <div class="col-2 mt-1">
            <a onclick="app.controllers.itunesCtrl.playSong('${this.preview}')"
            data-toggle="tooltip"
            data-placement="top"

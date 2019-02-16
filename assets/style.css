@@ -11,14 +11,17 @@ body {
   position: absolute;
   z-index: -1;
   margin-top: -6.8vh;
-  margin-left: 3.6vw;
+  margin-left: 5.5vw;
   visibility: hidden;
+  width: 400px;
+  height: 200px;
 }
 
 .title {
   text-shadow: 2px 2px black;
   cursor: pointer;
   font-style: italic;
+  margin-top: 1.5vh;
 }
 
 .song-input {

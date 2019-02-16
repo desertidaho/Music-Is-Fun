@@ -14,9 +14,6 @@ function drawSongs() {
   document.querySelector('#songs').innerHTML = template
   //now playing
 
-
-
-
 }
 
 
@@ -38,12 +35,13 @@ export default class ItunesController {
     form.reset()
     document.body.style.backgroundImage = "url('https://i.ibb.co/ypcy8Ps/black.png')";
     document.querySelector('.title-bg-img').style.visibility = 'visible'
-    document.querySelector('.fas').style.display = 'none'
+    document.querySelector('.fas').style.display = 'visible'
     document.querySelector('.home-intro').style.display = 'none'
   }
 
   playSong(url) {
     document.getElementById('playAudio').setAttribute("src", url)
+    document.querySelector('.nowPlaying').innerText = 0
   }
 
   home() {
