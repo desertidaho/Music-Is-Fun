@@ -1,16 +1,24 @@
 body {
   margin: 0;
   font-family: 'Source Code Pro', monospace;
-  background-image: url('https://i.ibb.co/1KDCbYD/music.jpg');
-  border: 3px solid black;
-  background-repeat: no-repeat;
   background-color: black;
-  background-size: contain;
-  background-position: -15px -14px;
+  background-image: url('https://i.ibb.co/3T2YByq/music2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-bg-img {
+  position: absolute;
+  z-index: -1;
+  margin-top: -6.8vh;
+  margin-left: 3.6vw;
+  visibility: hidden;
 }
 
 .title {
   text-shadow: 2px 2px black;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .song-input {
@@ -25,6 +33,7 @@ body {
 
 #songs {
   margin-top: 100px;
+
 }
 
 audio {

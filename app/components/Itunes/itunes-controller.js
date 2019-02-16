@@ -12,6 +12,7 @@ function drawSongs() {
     template += song.getTemplate()
   });
   document.querySelector('#songs').innerHTML = template
+
 }
 
 
@@ -31,9 +32,15 @@ export default class ItunesController {
     document.querySelector('#get-music-button').textContent = 'LOADING....'
     itunesService.getMusicByArtist(artist)
     form.reset()
+    document.body.style.backgroundImage = "url('https://i.ibb.co/ypcy8Ps/black.png')";
+    document.querySelector('.title-bg-img').style.visibility = 'visible'
   }
 
   playSong(url) {
     document.getElementById('playAudio').setAttribute("src", url)
+  }
+
+  home() {
+    location.reload()
   }
 }

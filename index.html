@@ -19,14 +19,17 @@
     <div class="container-fluid">
 
         <header class="row mt-5">
-            <div class="col-2 d-flex justify-content-end">
-                <h1 class="text-white title"><i>listenUp</i></h1>
+            <div class="col-3 d-flex justify-content-end">
+                <img class="title-bg-img" src="https://i.ibb.co/1KDCbYD/music.jpg" alt="">
+                <a onclick="app.controllers.itunesCtrl.home()">
+                    <h1 class="text-white title"><i>listenUp</i></i></i></h1>
+                </a>
             </div>
-            <div class="col-10 d-flex justify-content-center">
+            <div class="col-9 d-flex justify-content-center">
                 <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
                     <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
                     <div class="form-group">
-                        <input type="text" class="form-control song-input" name="artist" placeholder=" Artist Name..."
+                        <input type="text" class="form-control song-input" name="artist" placeholder=" Search Music..."
                             id="song-input" />
                         <button type="submit" class="btn btn-lg btn-outline-light ml-2 song-btn" id="get-music-button">Get
                             Music</button>
