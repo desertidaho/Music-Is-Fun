@@ -18,9 +18,9 @@ export default class Song {
                 <img class="card-img-top img-fluid" src="${this.albumArt}" alt="">
                     <div class="card-body">
                          <h5 class="card-title">${this.title}</h5>
-                         <h6 class="card-text">${this.artist}</h6>
-                         <h6 class="card-text">${this.collection}</h6>
-                         <h6 class="card-text">$${this.price}</h6>
+                         <p class="card-text">${this.artist}</p>
+                     <!--    <h6 class="card-text">${this.collection}</h6> 
+                         <h6 class="card-text">$${this.price}</h6> -->
                      </div> 
             </div></a>
         </div> `
