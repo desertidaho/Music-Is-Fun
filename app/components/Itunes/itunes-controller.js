@@ -25,10 +25,12 @@ export default class ItunesController {
   //DO NOT MODIFY THIS METHOD
   getMusic(e) {
     e.preventDefault();
-    var artist = e.target.artist.value;
+    let artist = e.target.artist.value;
+    let form = e.target
     //changes the button to loading while songs load
     document.querySelector('#get-music-button').textContent = 'LOADING....'
     itunesService.getMusicByArtist(artist)
+    form.reset()
   }
 
   playSong(url) {
