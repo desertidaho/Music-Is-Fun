@@ -7,10 +7,6 @@ body {
   background-color: black;
 }
 
-.title {
-  text-shadow: 1px 1px solid black;
-}
-
 .song-input {
   height: 50px;
   width: 400px;
