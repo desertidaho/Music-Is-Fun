@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: 'Source Code Pro', monospace;
   background-image: url(/assets/img/music-bg.jpg);
+  border: 3px solid black;
   background-repeat: no-repeat;
   background-color: black;
 }
@@ -15,11 +16,17 @@ body {
   width: 400px;
 }
 
-.img {
-  width: 150px;
-  height: 150px;
+#songs {
+  margin-top: 100px;
 }
 
 audio {
-  width: 240px;
+  width: 300px;
+}
+
+.card {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  cursor: pointer;
 }

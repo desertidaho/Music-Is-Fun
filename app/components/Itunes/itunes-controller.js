@@ -12,7 +12,6 @@ function drawSongs() {
     template += song.getTemplate()
   });
   document.querySelector('#songs').innerHTML = template
-
 }
 
 
@@ -30,5 +29,9 @@ export default class ItunesController {
     //changes the button to loading while songs load
     document.querySelector('#get-music-button').textContent = 'LOADING....'
     itunesService.getMusicByArtist(artist)
+  }
+
+  playSong(url) {
+    document.getElementById('playAudio').setAttribute("src", url)
   }
 }
