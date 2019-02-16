@@ -1,4 +1,4 @@
-import Song from "../../models/song.js";
+import Song from "../../models/Song.js";
 
 let _state = {
   songs: []
