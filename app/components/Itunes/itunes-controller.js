@@ -34,6 +34,7 @@ export default class ItunesController {
     form.reset()
     document.body.style.backgroundImage = "url('https://i.ibb.co/ypcy8Ps/black.png')";
     document.querySelector('.title-bg-img').style.visibility = 'visible'
+    document.querySelector('.fas').style.display = 'none'
   }
 
   playSong(url) {
