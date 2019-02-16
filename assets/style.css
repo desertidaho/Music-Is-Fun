@@ -40,7 +40,7 @@ input[type="text"].song-input::-webkit-input-placeholder {
 }
 
 #intro {
-  height: 30vh;
+  height: 25vh;
 }
 
 .intro,
@@ -85,11 +85,13 @@ audio {
   }
 
   .title-bg-img {
-    margin-left: 6vw !important;
+    margin-left: 10vw !important;
+
   }
 
   .title {
     margin-right: 15vw;
+    font-size: 2rem;
   }
 
   .song-input {
@@ -112,13 +114,13 @@ audio {
   }
 
   #intro {
-    height: 20vh;
+    height: 8vh;
   }
 
   .intro,
   .p-intro {
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     opacity: 0.7;
   }
 
@@ -126,8 +128,8 @@ audio {
     font-size: 0.8rem;
   }
 
-
-
-
+  #songs {
+    margin-top: -5vh !important;
+  }
 
 }
