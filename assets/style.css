@@ -82,11 +82,11 @@ audio {
 
   body {
     background-size: contain;
+    overflow-x: hidden !important
   }
 
   .title-bg-img {
-    margin-left: 10vw !important;
-
+    margin-left: 13vw !important;
   }
 
   .title {
@@ -98,19 +98,19 @@ audio {
     margin-top: 13vh;
     height: 30px;
     width: 300px !important;
-    margin-left: 7vw;
+    margin-left: 5vw;
   }
 
   .song-btn {
     margin-top: 2vh;
     font-size: 0.7rem;
     width: 120px;
-    margin-left: 30vw !important;
+    margin-left: 31vw !important;
   }
 
   .my-audio {
     margin-top: 2vh;
-    margin-left: 7vw !important;
+    margin-left: 5vw !important;
   }
 
   #intro {
