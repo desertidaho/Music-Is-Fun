@@ -5,13 +5,17 @@ const itunesService = new ItunesService()
 function drawSongs() {
   //changes button back to GET MUSIC once songs are loaded
   document.querySelector('#get-music-button').textContent = 'GET MUSIC'
-
+  //card templates
   let songs = itunesService.Songs
   let template = ''
   songs.forEach(song => {
     template += song.getTemplate()
   });
   document.querySelector('#songs').innerHTML = template
+  //now playing
+
+
+
 
 }
 

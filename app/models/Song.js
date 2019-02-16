@@ -26,4 +26,10 @@ export default class Song {
         </div> `
     }
 
+    nowPlaying() {
+        return `${this.title}
+        
+        `
+    }
+
 }
