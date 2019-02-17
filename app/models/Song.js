@@ -8,6 +8,7 @@ export default class Song {
         this.iprice = song.trackPrice
         this.preview = song.previewUrl
         this.track = song.trackViewUrl
+        this.date = song.releaseDate
     }
 
     getTemplate() {
