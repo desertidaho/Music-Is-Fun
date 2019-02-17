@@ -122,7 +122,7 @@ audio {
   }
 
   #intro {
-    height: 8vh;
+    margin-top: -30vh;
   }
 
   .intro,
