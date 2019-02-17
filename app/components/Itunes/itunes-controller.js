@@ -38,6 +38,7 @@ export default class ItunesController {
     document.querySelector('.fas').style.display = 'visible'
     document.querySelector('.home-intro').style.display = 'none'
     document.querySelector('#click-to-play-p').style.visibility = 'visible'
+    document.querySelector('.my-audio').style.visibility = 'visible'
   }
 
   playSong(url) {
