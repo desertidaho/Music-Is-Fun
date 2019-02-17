@@ -1,5 +1,6 @@
 import ItunesService from "./itunes-service.js";
-//Private
+
+//Private////////////
 const _itunesService = new ItunesService()
 
 function drawSongs() {
@@ -12,12 +13,9 @@ function drawSongs() {
     template += song.getTemplate()
   });
   document.querySelector('#songs').innerHTML = template
-  //now playing
-
 }
 
-
-//PUBLIC
+//PUBLIC/////////////
 export default class ItunesController {
   constructor() {
     _itunesService.addSubscriber('songs', drawSongs)
@@ -49,4 +47,5 @@ export default class ItunesController {
   home() {
     location.reload()
   }
+
 }
