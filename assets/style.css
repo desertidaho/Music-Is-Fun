@@ -128,8 +128,12 @@ audio {
     font-size: 0.8rem;
   }
 
+  .itunes {
+    margin-bottom: 1vh;
+  }
+
   #songs {
-    margin-top: -5vh !important;
+    margin-top: 5vh !important;
   }
 
 }

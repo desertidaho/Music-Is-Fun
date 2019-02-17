@@ -5,7 +5,9 @@ export default class Song {
         this.artist = song.artistName
         this.collection = song.collectionName
         this.price = song.collectionPrice
+        this.iprice = song.trackPrice
         this.preview = song.previewUrl
+        this.track = song.trackViewUrl
     }
 
     getTemplate() {
@@ -21,12 +23,6 @@ export default class Song {
                      </div> 
             </div></a>
         </div> `
-    }
-
-    nowPlaying() {
-        return `${this.title}
-        
-        `
     }
 
 }
