@@ -33,4 +33,13 @@ export default class ItunesService {
   addSubscriber(prop, fn) {
     _subscribers[prop].push(fn)
   }
+
+  showDetails(url) {
+    for (let i = 0; i < _state.songs.length; i++) {
+      if (_state.songs[i].preview == [url]) {
+        document.querySelector('.now-playing').innerHTML = `<p class="text-white" id="now-playing"><b>Playing- </>Title: ${_state.songs[i].title},  Album: ${_state.songs[i].collection},  $${_state.songs[i].price}</p>`
+      }
+    }
+  }
+
 }
