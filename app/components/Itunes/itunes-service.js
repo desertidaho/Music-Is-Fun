@@ -38,8 +38,8 @@ export default class ItunesService {
   showDetails(url) {
     for (let i = 0; i < _state.songs.length; i++) {
       if (_state.songs[i].preview == [url]) {
-        document.querySelector('.now-playing').innerHTML = `<p class="text-white mt-5" id="now-playing"><b>Playing: </>${_state.songs[i].title}, by ${_state.songs[i].artist}, Album: ${_state.songs[i].collection}, ${_state.songs[i].date.substring(0, 10)}</p>`
-        document.querySelector('.now-playing-btn').innerHTML = `<a href="${_state.songs[i].track}"  target="_blank"><button class="btn btn-sm btn-outline-light mx-2 itunes">Download Song $${_state.songs[i].iprice}</button><button class="btn btn-sm btn-outline-light mx-2">Download Album $${_state.songs[i].price}</button></a>`
+        document.querySelector('.now-playing').innerHTML = `<p class="mt-3" id="now-playing"><b>Playing: </>${_state.songs[i].title}, by ${_state.songs[i].artist}, Album: ${_state.songs[i].collection}, ${_state.songs[i].date.substring(0, 10)}</p>`
+        document.querySelector('.now-playing-btn').innerHTML = `<a href="${_state.songs[i].track}"  target="_blank"><button class="btn btn-sm btn-dark shadow mx-2 mb-4 itunes">Download Song $${_state.songs[i].iprice}</button><button class="btn btn-sm btn-dark shadow mx-2 mb-4">Download Album $${_state.songs[i].price}</button></a>`
       }
     }
   }
