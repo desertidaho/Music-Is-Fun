@@ -11,7 +11,7 @@ body {
   position: absolute;
   z-index: -1;
   margin-top: -6.8vh;
-  margin-left: 5.5vw;
+
   visibility: hidden;
   width: 400px;
   height: 200px;
@@ -116,7 +116,7 @@ footer {
 
   .title {
     margin-top: -4vh;
-    margin-right: 17vw;
+    margin-right: 0;
     font-size: 2rem;
   }
 
@@ -128,7 +128,7 @@ footer {
   }
 
   .song-btn {
-    margin-top: 1vh;
+    margin-top: 2vh;
     font-size: 0.7rem;
     width: 120px;
     margin-left: 31vw !important;
@@ -136,7 +136,7 @@ footer {
 
   .my-audio {
     margin-top: 2vh;
-    margin-left: 6vw !important;
+    margin-left: 0vw !important;
   }
 
   #intro {
@@ -173,8 +173,7 @@ footer {
   }
 
   footer p {
-    font-size: 0.8rem;
-    padding: 0 3vw;
+    font-size: 0.7rem;
   }
 
   #download-album {
