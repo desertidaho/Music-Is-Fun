@@ -28,16 +28,15 @@ export default class ItunesController {
     let artist = e.target.artist.value;
     let form = e.target
     //changes the button to loading while songs load
-    document.querySelector('#get-music-button').textContent = 'LOADING....'
+    document.querySelector('#get-music-button').textContent = 'LOADING...'
     _itunesService.getMusicByArtist(artist)
     form.reset()
     document.body.style.backgroundImage = "url('https://i.ibb.co/ypcy8Ps/black.png')";
     document.querySelector('.title-bg-img').style.visibility = 'visible'
-    document.querySelector('.fas').style.display = 'visible'
-    document.querySelector('.home-intro').style.display = 'none'
-    document.querySelector('#click-to-play-p').style.visibility = 'visible'
     document.querySelector('.my-audio').style.visibility = 'visible'
+    document.querySelector('.home-intro').style.display = 'none'
     document.querySelector('#my-footer').style.visibility = 'visible'
+    document.querySelector('#click-to-play-p').style.visibility = 'visible'
   }
 
   playSong(url) {
