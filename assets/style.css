@@ -111,33 +111,31 @@ footer {
   }
 
   .title-bg-img {
-    display: flex;
-    justify-content: center;
-    margin-left: 8vw !important;
+    display: none;
   }
 
   .title {
-    margin-top: 2.4vh;
+    margin-top: -4vh;
     margin-right: 20vw;
     font-size: 2rem;
   }
 
   .song-input {
-    margin-top: 3vh;
+    margin-top: 1vh;
     height: 30px;
     width: 250px !important;
     margin-left: 13vw;
   }
 
   .song-btn {
-    margin-top: 2vh;
+    margin-top: 1vh;
     font-size: 0.7rem;
     width: 120px;
     margin-left: 31vw !important;
   }
 
   .my-audio {
-    margin-top: -10vh;
+    margin-top: 2vh;
     margin-left: 6vw !important;
   }
 
@@ -148,7 +146,7 @@ footer {
   .intro,
   .p-intro {
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 0.9rem;
     opacity: 0.7;
   }
 
@@ -162,7 +160,8 @@ footer {
   }
 
   .itunes {
-    margin-bottom: 1vh;
+    margin-bottom: 0.5vh;
+    font-size: 0.6rem !important;
   }
 
   #songs {
@@ -174,7 +173,7 @@ footer {
   }
 
   footer p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding: 0 8vw;
   }
 
