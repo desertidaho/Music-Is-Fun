@@ -116,7 +116,7 @@ footer {
 
   .title {
     margin-top: -4vh;
-    margin-right: 0;
+    margin-left: 1vw;
     font-size: 2rem;
   }
 
@@ -124,14 +124,14 @@ footer {
     margin-top: 1vh;
     height: 30px;
     width: 250px !important;
-    margin-left: 11vw;
+    margin-left: 7vw;
   }
 
   .song-btn {
     margin-top: 2vh;
     font-size: 0.7rem;
     width: 120px;
-    margin-left: 31vw !important;
+    margin-left: 26vw !important;
   }
 
   .my-audio {
