@@ -21,20 +21,20 @@
     <div class="container-fluid">
 
         <header class="row mt-5">
-            <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="col-12 col-md-4 d-flex justify-content-center mt-5">
                 <img class="title-bg-img" src="https://i.ibb.co/1KDCbYD/music.jpg" alt="">
                 <a onclick="app.controllers.itunesCtrl.home()">
                     <h1 class="text-white title mr-4">listenUp<i class="fas fa-arrow-circle-up ml-3"></i></h1>
                 </a>
             </div>
-            <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="col-12 col-md-4 d-flex justify-content-center mt-5">
                 <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
                     <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
                     <div class="form-group">
-                        <input type="text" class="form-control song-input" name="artist" placeholder="Search Music..."
+                        <input type="text" class="form-control song-input" name="artist" placeholder="Artist, Album, Song..."
                             id="song-input" />
                         <button type="submit" class="btn btn-lg btn-outline-light ml-2 song-btn"
-                            id="get-music-button">Get
+                            id="get-music-button">Search
                             Music</button>
                         <audio controls autoplay class="my-audio ml-5 song-audio" id="playAudio" src=""
                             type="audio/ogg">
