@@ -5,7 +5,7 @@ const _itunesService = new ItunesService()
 
 function drawSongs() {
   //changes button back to GET MUSIC once songs are loaded
-  document.querySelector('#get-music-button').textContent = 'GET MUSIC'
+  document.querySelector('#get-music-button').textContent = 'SEARCH MUSIC'
   //card templates
   let songs = _itunesService.Songs
   let template = ''

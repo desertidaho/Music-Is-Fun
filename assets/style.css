@@ -121,6 +121,10 @@ footer {
     font-size: 2rem;
   }
 
+  #form-search {
+    margin-top: 0px !important;
+  }
+
   .song-input {
     margin-top: 1vh;
     height: 30px;
@@ -141,7 +145,7 @@ footer {
   }
 
   #intro {
-    margin-top: 2vh;
+    margin-top: 0px !important;
   }
 
   .intro,
